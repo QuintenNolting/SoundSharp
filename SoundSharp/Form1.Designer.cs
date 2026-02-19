@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             btnAdd = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
+            lblVoorraad = new Label();
+            lstbxStock = new ListBox();
             SuspendLayout();
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(646, 26);
+            btnAdd.Location = new Point(300, 37);
+            btnAdd.Margin = new Padding(2, 4, 2, 4);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(112, 34);
+            btnAdd.Size = new Size(112, 35);
             btnAdd.TabIndex = 0;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = true;
@@ -45,33 +49,62 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(646, 66);
+            btnEdit.Location = new Point(300, 77);
+            btnEdit.Margin = new Padding(2, 4, 2, 4);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(112, 34);
+            btnEdit.Size = new Size(112, 35);
             btnEdit.TabIndex = 1;
             btnEdit.Text = "Aanpassen";
             btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(646, 106);
+            btnDelete.Location = new Point(300, 117);
+            btnDelete.Margin = new Padding(2, 4, 2, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(112, 34);
+            btnDelete.Size = new Size(112, 35);
             btnDelete.TabIndex = 2;
             btnDelete.Text = "Verwijderen";
             btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // lblVoorraad
+            // 
+            lblVoorraad.AutoSize = true;
+            lblVoorraad.Location = new Point(12, 10);
+            lblVoorraad.Margin = new Padding(2, 0, 2, 0);
+            lblVoorraad.Name = "lblVoorraad";
+            lblVoorraad.Size = new Size(85, 25);
+            lblVoorraad.TabIndex = 3;
+            lblVoorraad.Text = "Voorraad";
+            // 
+            // lstbxStock
+            // 
+            lstbxStock.BackColor = SystemColors.GradientInactiveCaption;
+            lstbxStock.FormattingEnabled = true;
+            lstbxStock.ItemHeight = 25;
+            lstbxStock.Location = new Point(12, 37);
+            lstbxStock.Margin = new Padding(2, 4, 2, 4);
+            lstbxStock.Name = "lstbxStock";
+            lstbxStock.Size = new Size(282, 404);
+            lstbxStock.TabIndex = 4;
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(419, 450);
+            Controls.Add(lstbxStock);
+            Controls.Add(lblVoorraad);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(btnAdd);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2, 4, 2, 4);
             Name = "frmMain";
             Text = "SoundSharp";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -79,5 +112,7 @@
         private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
+        private Label lblVoorraad;
+        private ListBox lstbxStock;
     }
 }
