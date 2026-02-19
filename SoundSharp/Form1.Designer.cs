@@ -1,6 +1,6 @@
 ﻿namespace SoundSharp
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnAdd = new Button();
+            btnEdit = new Button();
+            btnDelete = new Button();
+            SuspendLayout();
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(646, 26);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(112, 34);
+            btnAdd.TabIndex = 0;
+            btnAdd.Text = "+";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += button1_Click;
+            // 
+            // btnEdit
+            // 
+            btnEdit.Location = new Point(646, 66);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(112, 34);
+            btnEdit.TabIndex = 1;
+            btnEdit.Text = "Aanpassen";
+            btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(646, 106);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(112, 34);
+            btnDelete.TabIndex = 2;
+            btnDelete.Text = "Verwijderen";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // frmMain
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnDelete);
+            Controls.Add(btnEdit);
+            Controls.Add(btnAdd);
+            Name = "frmMain";
+            Text = "SoundSharp";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnAdd;
+        private Button btnEdit;
+        private Button btnDelete;
     }
 }
