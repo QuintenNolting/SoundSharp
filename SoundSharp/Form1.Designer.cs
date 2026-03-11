@@ -45,7 +45,7 @@
             btnAdd.TabIndex = 0;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += button1_Click;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnEdit
             // 
@@ -56,6 +56,7 @@
             btnEdit.TabIndex = 1;
             btnEdit.Text = "Aanpassen";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
@@ -66,6 +67,7 @@
             btnDelete.TabIndex = 2;
             btnDelete.Text = "Verwijderen";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // lblVoorraad
             // 
@@ -76,6 +78,7 @@
             lblVoorraad.Size = new Size(85, 25);
             lblVoorraad.TabIndex = 3;
             lblVoorraad.Text = "Voorraad";
+            lblVoorraad.Click += lblVoorraad_Click;
             // 
             // lstbxStock
             // 
