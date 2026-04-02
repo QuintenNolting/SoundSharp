@@ -38,10 +38,10 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(300, 37);
+            btnAdd.Location = new Point(174, 3);
             btnAdd.Margin = new Padding(2, 4, 2, 4);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(112, 35);
+            btnAdd.Size = new Size(236, 52);
             btnAdd.TabIndex = 0;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = true;
@@ -49,10 +49,10 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(300, 77);
+            btnEdit.Location = new Point(414, 3);
             btnEdit.Margin = new Padding(2, 4, 2, 4);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(112, 35);
+            btnEdit.Size = new Size(236, 52);
             btnEdit.TabIndex = 1;
             btnEdit.Text = "Aanpassen";
             btnEdit.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(300, 117);
+            btnDelete.Location = new Point(654, 3);
             btnDelete.Margin = new Padding(2, 4, 2, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(112, 35);
+            btnDelete.Size = new Size(236, 52);
             btnDelete.TabIndex = 2;
             btnDelete.Text = "Verwijderen";
             btnDelete.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // lblVoorraad
             // 
             lblVoorraad.AutoSize = true;
-            lblVoorraad.Location = new Point(12, 10);
+            lblVoorraad.Location = new Point(11, 34);
             lblVoorraad.Margin = new Padding(2, 0, 2, 0);
             lblVoorraad.Name = "lblVoorraad";
             lblVoorraad.Size = new Size(85, 25);
@@ -85,18 +85,19 @@
             lstbxStock.BackColor = SystemColors.GradientInactiveCaption;
             lstbxStock.FormattingEnabled = true;
             lstbxStock.ItemHeight = 25;
-            lstbxStock.Location = new Point(12, 37);
+            lstbxStock.Location = new Point(11, 63);
             lstbxStock.Margin = new Padding(2, 4, 2, 4);
             lstbxStock.Name = "lstbxStock";
-            lstbxStock.Size = new Size(282, 404);
+            lstbxStock.Size = new Size(879, 379);
             lstbxStock.TabIndex = 4;
+            lstbxStock.SelectedIndexChanged += lstbxStock_SelectedIndexChanged;
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(419, 450);
+            ClientSize = new Size(901, 450);
             Controls.Add(lstbxStock);
             Controls.Add(lblVoorraad);
             Controls.Add(btnDelete);
@@ -106,6 +107,7 @@
             Margin = new Padding(2, 4, 2, 4);
             Name = "frmMain";
             Text = "SoundSharp";
+            Load += frmMain_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -36,9 +36,9 @@
             lblStock = new Label();
             tbxBrand = new TextBox();
             tbxModel = new TextBox();
-            txbSize = new TextBox();
-            txbPrice = new TextBox();
-            txbStock = new TextBox();
+            tbxSize = new TextBox();
+            tbxPrice = new TextBox();
+            tbxStock = new TextBox();
             btnCancel = new Button();
             btnOk = new Button();
             SuspendLayout();
@@ -103,27 +103,31 @@
             tbxModel.Name = "tbxModel";
             tbxModel.Size = new Size(150, 31);
             tbxModel.TabIndex = 6;
+            tbxModel.TextChanged += tbxModel_TextChanged;
             // 
-            // txbSize
+            // tbxSize
             // 
-            txbSize.Location = new Point(168, 86);
-            txbSize.Name = "txbSize";
-            txbSize.Size = new Size(150, 31);
-            txbSize.TabIndex = 7;
+            tbxSize.Location = new Point(168, 86);
+            tbxSize.Name = "tbxSize";
+            tbxSize.Size = new Size(150, 31);
+            tbxSize.TabIndex = 7;
+            tbxSize.TextChanged += tbxSize_TextChanged;
             // 
-            // txbPrice
+            // tbxPrice
             // 
-            txbPrice.Location = new Point(168, 123);
-            txbPrice.Name = "txbPrice";
-            txbPrice.Size = new Size(150, 31);
-            txbPrice.TabIndex = 8;
+            tbxPrice.Location = new Point(168, 123);
+            tbxPrice.Name = "tbxPrice";
+            tbxPrice.Size = new Size(150, 31);
+            tbxPrice.TabIndex = 8;
+            tbxPrice.TextChanged += tbxPrice_TextChanged;
             // 
-            // txbStock
+            // tbxStock
             // 
-            txbStock.Location = new Point(168, 160);
-            txbStock.Name = "txbStock";
-            txbStock.Size = new Size(150, 31);
-            txbStock.TabIndex = 9;
+            tbxStock.Location = new Point(168, 160);
+            tbxStock.Name = "tbxStock";
+            tbxStock.Size = new Size(150, 31);
+            tbxStock.TabIndex = 9;
+            tbxStock.TextChanged += tbxStock_TextChanged;
             // 
             // btnCancel
             // 
@@ -133,15 +137,18 @@
             btnCancel.TabIndex = 10;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnOk
             // 
+            btnOk.DialogResult = DialogResult.OK;
             btnOk.Location = new Point(12, 197);
             btnOk.Name = "btnOk";
             btnOk.Size = new Size(306, 51);
             btnOk.TabIndex = 11;
             btnOk.Text = "Ok";
             btnOk.UseVisualStyleBackColor = true;
+            btnOk.Click += btnOk_Click;
             // 
             // AddPhone
             // 
@@ -150,9 +157,9 @@
             ClientSize = new Size(330, 260);
             Controls.Add(btnOk);
             Controls.Add(btnCancel);
-            Controls.Add(txbStock);
-            Controls.Add(txbPrice);
-            Controls.Add(txbSize);
+            Controls.Add(tbxStock);
+            Controls.Add(tbxPrice);
+            Controls.Add(tbxSize);
             Controls.Add(tbxModel);
             Controls.Add(tbxBrand);
             Controls.Add(lblStock);
@@ -176,9 +183,9 @@
         private Label lblStock;
         private TextBox tbxBrand;
         private TextBox tbxModel;
-        private TextBox txbSize;
-        private TextBox txbPrice;
-        private TextBox txbStock;
+        private TextBox tbxSize;
+        private TextBox tbxPrice;
+        private TextBox tbxStock;
         private Button btnCancel;
         private Button btnOk;
     }

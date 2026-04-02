@@ -1,0 +1,44 @@
+{
+  "Phones": [
+    {
+      "Id": 1,
+      "Brand": "Frappleton",
+      "Model": "6000",
+      "Size": 512000,
+      "Price": 999.99,
+      "Stock": 65
+    },
+    {
+      "Id": 2,
+      "Brand": "Timbus",
+      "Model": "55055",
+      "Size": 256000,
+      "Price": 499.99,
+      "Stock": 89
+    },
+    {
+      "Id": 3,
+      "Brand": "Squogger",
+      "Model": "6mil",
+      "Size": 1028000,
+      "Price": 1999.99,
+      "Stock": 40
+    },
+    {
+      "Id": 4,
+      "Brand": "Apolle",
+      "Model": "3ds",
+      "Size": 10,
+      "Price": 4.99,
+      "Stock": 10000
+    }
+  ],
+  "Users": [
+    {
+      "Username": "username1",
+      "Password": "1234",
+      "FailedAttempts": 0,
+      "Locked": false
+    }
+  ]
+}

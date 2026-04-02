@@ -13,14 +13,16 @@ namespace SoundSharp
         public string Model { get; set; }
         public int Size { get; set; }
         public decimal Price { get; set; }
+        public int Stock { get; set; }
 
-        public SmartPhone(int id, string brand, string model, int size, decimal price)
+        public SmartPhone(int id, string brand, string model, int size, decimal price, int stock)
         {
             Id = id;
             Brand = brand;
             Model = model;
             Size = size;
             Price = price;
+            Stock = stock;
         }
     }
 }
